@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hobbies Page</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+        <header>
+            <div >
+                <div>
+                    <img src="images/log.png" alt="logo here">
+                </div>
+                <nav class="navbar">
+                    <a href="home.html">Home</a>
+                    <a href="about-me.html">About Me</a>
+                    <a href="hobbies.html">Hobbies</a>
+                    <a href="interests.html">Interests</a>
+                    <a href="inspirations.html">Inspirations</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+           <section>
+            <h1>My Hobbies</h1>
+            <h2>Reading Books</h2>
+            <p>
+                Books hold an irreplaceable position in my life; they're steadfast companions offering fresh perspectives. Each book is a journey, a chance to delve into another mind and experience the world through a different lens. The following is a list of my favorite authors of all time.</p>
+                <ul>
+                    <li> Ryan Holiday</li>
+                    <li> Robert Greene</li>
+                    <li> Khalil Gibran</li>
+                </ul>
+            <p>And in the following table you shall find my favorite book in a particular genere of books</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Genre</th>
+                        <th>Book</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Stoicism</td>
+                        <td>The Daily Stoic by Ryan Holiday</td>
+                    </tr>
+                    <tr>
+                        <td>Psychology</td>
+                        <td>The Molecule of More by Daniel Liberman</td>
+                    </tr>
+                    <tr>
+                        <td>Fiction</td>
+                        <td>London Calling by Edward Bloor</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3> My Top 3</h3>
+            <figure>
+                <img src="images/daily.jpg" alt="The cover of the daily stoic">
+                <figcaption>
+                   The Daily Stoic
+            </figcaption>
+        </figure>
+            <figure>
+                <img src="images/childhood.jpg" alt="childhood book cover">
+                <figcaption>
+                   Childhood
+            </figcaption>
+            </figure>
+            <figure>
+                <img src="images/meditations.jpg" alt="meditations book cover">
+                <figcaption>
+                 Meditations
+            </figcaption>
+            </figure>
+            <h2>Coding</h2>
+            <p>I developed an interest for coding this past summer when I followed a tutorial on web development. Coding can be a fun way to spend time and this hobby is special to me because it aids the courses that I am currently taking at AAU. This past summer, I created a quote randomizer. I took the quotes from my favorite authors and put them in a javascript array then wrote the following function to randomize the quotes on a click of a button.</p>
+            <pre>
+                <code>
+                    button.addEventListener('click', function() {
+                        let randomQuoteIndex = Math.floor(Math.random() * quotes.length);
+                        quote.innerText = quotes[randomQuoteIndex].quote;
+                        person.innerText = quotes[randomQuoteIndex].person;
+                        document.body.style.backgroundImage = `url(${quotes[randomQuoteIndex].backgrounds})`;
+                      });
+                </code>
+            </pre>
+            <aside>
+               <h3>Hobbies</h3>
+               <img src="images/hobby.jpg" alt="cup and camera">
+               <p>
+                <i class="fa-solid fa-book-open"></i> Reading books
+            </p>
+            <p>
+                <i class="fa-solid fa-laptop-code"></i> Coding
+            </p>
+            <p>
+                <i class="fa-solid fa-video"></i>  Video editing
+            </p>
+            <p>
+                <i class="fa-solid fa-music"></i> Listening to music
+            </p>
+            <p>
+                <i class="fa-solid fa-camera-retro"></i> Photography
+            </p>
+            </aside>
+
+            <aside>
+                <h3>Travel plans</h3>
+                <figure>
+                    <img src="images/turkey.jpg" alt="istanbul">
+                    <figcaption>
+                        Istanbul
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/china.jpg" alt="The great wall of china">
+                <figcaption>
+                    The great wall
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/japan.jpeg" alt="japan">
+            <figcaption>
+                Tokyo
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="images/russia.jpg" alt="russia">
+        <figcaption>
+            Moscow
+    </figcaption>
+</figure>
+<figure>
+    <img src="images/israel.jpg" alt="israel">
+    <figcaption>
+        Isreal
+</figcaption>
+</figure>
+<figure>
+    <img src="images/Greece.jpg" alt="greece">
+    <figcaption>
+        Greece
+</figcaption>
+</figure>
+            </aside>
+           </section>
+        <section>
+            <h2>Video Editing</h2>
+            <p>I edited this video for a personal project. I was making a dummy website for a wildlife sanctuary I named "Jafar" but I obviously couldn't find a video tailored to my project. So i took it upon myself to edit one for the project.And this was the result.</p>
+            <video src="images/JAFAR.mp4" controls loop></video>
+            <p>After hearing the melancholic poem "The Rainy Day" by Henry Wadsworth Longfellow being read out loud I couldn't help but make a video for it. The result was a touching and cinematic video. </p>
+            <video src="images/the-rainy-day.mp4" controls loop ></video>
+        <h2>Did I mention my current favorite song?</h2>
+        <audio controls muted src="images/renzema.mp3" title="All of my worst Ideas by Chris Renzema"></audio>
+        </section>   
+        <section>
+            <h2>Photos I've taken</h2>
+            <figure>
+                <img src="images/photo1.jpg" alt="photo1">
+                <figcaption>
+                    Coba Leaves
+            </figcaption>
+        </figure><figure>
+            <img src="images/photo2.jpg" alt="photo2">
+            <figcaption>
+           My mom's flower
+        </figcaption>
+    </figure><figure>
+        <img src="images/photo3.jpg" alt="photo3">
+        <figcaption>
+         The lonley way home
+    </figcaption>
+</figure>
+<figure>
+    <img src="images/photo4.jpg" alt="photo4">
+    <figcaption>
+      Wooden bird from Gondor
+</figcaption>
+</figure>
+        </section> 
+        </main>
+   
+        <footer>
+            <div >
+                <div >
+                    <img src="images/log.png" alt="logo here">
+                    <div>
+                        <p >
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:lidiyamkt@gmail.com" class="email1">Email me</a>
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-linkedin"></i> linkedin.com/
+                        </p>
+                        <p>
+                            <i class="fa-brands fa-telegram"></i> t.me/@YW10565
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone"></i> +251913460116
+                        </p>
+                        <p> <i class="fa-brands fa-github"></i>github.com/Lidiya-MK</p>
+                       
+                    </div>
+                </div>
+                <div>
+                    <h3>Site Map</h3>
+                    <ul class="site-map">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about-me.html">About Me</a></li>
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                        <li><a href="interests.html">Interests</a></li>
+                        <li><a href="inspirations.html">Inspirations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Your name">
+                    <input type="email" placeholder="Your email">
+                    <input type="text" placeholder="Your message">
+                </div>
+            </div>
+            <div>
+                &copy; 2023 LMK.com. All Rights Reserved.
+            </div>
+        </footer>
+ 
+</body>
+</html>
