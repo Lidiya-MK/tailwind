@@ -3,228 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <title>Hobbies Page</title>
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-        <header>
-            <div >
-                <div>
-                    <img src="images/log.png" alt="logo here">
-                </div>
-                <nav class="navbar">
-                    <a href="home.html">Home</a>
-                    <a href="about-me.html">About Me</a>
-                    <a href="hobbies.html">Hobbies</a>
-                    <a href="interests.html">Interests</a>
-                    <a href="inspirations.html">Inspirations</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-           <section>
-            <h1>My Hobbies</h1>
-            <h2>Reading Books</h2>
-            <p>
-                Books hold an irreplaceable position in my life; they're steadfast companions offering fresh perspectives. Each book is a journey, a chance to delve into another mind and experience the world through a different lens. The following is a list of my favorite authors of all time.</p>
-                <ul>
-                    <li> Ryan Holiday</li>
-                    <li> Robert Greene</li>
-                    <li> Khalil Gibran</li>
+    <header>
+        <div class="bg-stone-800 py-3 px-4 lg:px-6">
+            <nav class="flex items-center justify-between">
+                <img src="images/logo.png" alt="Logo" class="h-16 w-auto">
+        
+                
+                <ul  id="menuList" class="hidden lg:flex space-x-6 text-white text-sm lg:text-base">
+                    <li><a href="home.html" class="hover:text-yellow-300 transition-colors duration-300">HOME</a></li>
+                    <li><a href="about-me.html" class="hover:text-yellow-300 transition-colors duration-300">ABOUT ME</a></li>
+                    <li><a href="hobbies.html" class="hover:text-yellow-300 transition-colors duration-300">HOBBIES</a></li>
+                    <li><a href="interests.html" class="hover:text-yellow-300 transition-colors duration-300">INTERESTS</a></li>
+                    <li><a href="inspirations.html" class="hover:text-yellow-300 transition-colors duration-300">INSPIRATIONS</a></li>
                 </ul>
-            <p>And in the following table you shall find my favorite book in a particular genere of books</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Genre</th>
-                        <th>Book</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Stoicism</td>
-                        <td>The Daily Stoic by Ryan Holiday</td>
-                    </tr>
-                    <tr>
-                        <td>Psychology</td>
-                        <td>The Molecule of More by Daniel Liberman</td>
-                    </tr>
-                    <tr>
-                        <td>Fiction</td>
-                        <td>London Calling by Edward Bloor</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h3> My Top 3</h3>
-            <figure>
-                <img src="images/daily.jpg" alt="The cover of the daily stoic">
-                <figcaption>
-                   The Daily Stoic
-            </figcaption>
-        </figure>
-            <figure>
-                <img src="images/childhood.jpg" alt="childhood book cover">
-                <figcaption>
-                   Childhood
-            </figcaption>
-            </figure>
-            <figure>
-                <img src="images/meditations.jpg" alt="meditations book cover">
-                <figcaption>
-                 Meditations
-            </figcaption>
-            </figure>
-            <h2>Coding</h2>
-            <p>I developed an interest for coding this past summer when I followed a tutorial on web development. Coding can be a fun way to spend time and this hobby is special to me because it aids the courses that I am currently taking at AAU. This past summer, I created a quote randomizer. I took the quotes from my favorite authors and put them in a javascript array then wrote the following function to randomize the quotes on a click of a button.</p>
-            <pre>
-                <code>
-                    button.addEventListener('click', function() {
-                        let randomQuoteIndex = Math.floor(Math.random() * quotes.length);
-                        quote.innerText = quotes[randomQuoteIndex].quote;
-                        person.innerText = quotes[randomQuoteIndex].person;
-                        document.body.style.backgroundImage = `url(${quotes[randomQuoteIndex].backgrounds})`;
-                      });
-                </code>
-            </pre>
-            <aside>
-               <h3>Hobbies</h3>
-               <img src="images/hobby.jpg" alt="cup and camera">
-               <p>
-                <i class="fa-solid fa-book-open"></i> Reading books
-            </p>
-            <p>
-                <i class="fa-solid fa-laptop-code"></i> Coding
-            </p>
-            <p>
-                <i class="fa-solid fa-video"></i>  Video editing
-            </p>
-            <p>
-                <i class="fa-solid fa-music"></i> Listening to music
-            </p>
-            <p>
-                <i class="fa-solid fa-camera-retro"></i> Photography
-            </p>
-            </aside>
+        
+            
+                <button id="menuToggle" class="block lg:hidden text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+            <ul id="secondaryMenuList" class="hidden lg:hidden space-y-2 text-white text-sm text-center">
+                <li><a href="home.html" class="hover:text-yellow-300 transition-colors duration-300">HOME</a></li>
+                <li><a href="about-me.html" class="hover:text-yellow-300 transition-colors duration-300">ABOUT ME</a></li>
+                <li><a href="hobbies.html" class="hover:text-yellow-300 transition-colors duration-300">HOBBIES</a></li>
+                <li><a href="interests.html" class="hover:text-yellow-300 transition-colors duration-300">INTERESTS</a></li>
+                <li><a href="inspirations.html" class="hover:text-yellow-300 transition-colors duration-300">INSPIRATIONS</a></li>
+            </ul>
+        </div>
+        
 
-            <aside>
-                <h3>Travel plans</h3>
-                <figure>
-                    <img src="images/turkey.jpg" alt="istanbul">
-                    <figcaption>
-                        Istanbul
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/china.jpg" alt="The great wall of china">
-                <figcaption>
-                    The great wall
-            </figcaption>
-        </figure>
-        <figure>
-            <img src="images/japan.jpeg" alt="japan">
-            <figcaption>
-                Tokyo
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="images/russia.jpg" alt="russia">
-        <figcaption>
-            Moscow
-    </figcaption>
-</figure>
-<figure>
-    <img src="images/israel.jpg" alt="israel">
-    <figcaption>
-        Isreal
-</figcaption>
-</figure>
-<figure>
-    <img src="images/Greece.jpg" alt="greece">
-    <figcaption>
-        Greece
-</figcaption>
-</figure>
+    </header>
+    <main class="bg-stone-700">
+        <h1 class="text-white text-3xl lg:text-5xl font-bold text-center mb-6 pt-6">My Hobbies</h1>
+        <section class="bg-stone-700 flex flex-col lg:flex-row justify-center text-white p-6">
+            <aside class="hobbies__sidebar1 bg-gray-400 text-white w-full lg:w-2/6 p-4 rounded-lg mb-4 lg:mb-0 mr-0 lg:mr-4 order-2 lg:order-1">
+                <img src="images/hobby.jpg" alt="cup and camera" class="hobbies__image-hobby w-full h-40 object-cover rounded-lg mb-4 ">
+                <div class="hobby-list">
+                    <h3 class="hobbies-list__title text-lg font-bold mb-2">Quick list</h3>
+                    <p>
+                        <i class="fa-solid fa-book-open"></i> Reading books
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-laptop-code"></i> Coding
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-video"></i> Video editing
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-music"></i> Listening to music
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-camera-retro"></i> Photography
+                    </p>
+                </div>
             </aside>
-           </section>
-        <section>
-            <h2>Video Editing</h2>
-            <p>I edited this video for a personal project. I was making a dummy website for a wildlife sanctuary I named "Jafar" but I obviously couldn't find a video tailored to my project. So i took it upon myself to edit one for the project.And this was the result.</p>
-            <video src="images/JAFAR.mp4" controls loop></video>
-            <p>After hearing the melancholic poem "The Rainy Day" by Henry Wadsworth Longfellow being read out loud I couldn't help but make a video for it. The result was a touching and cinematic video. </p>
-            <video src="images/the-rainy-day.mp4" controls loop ></video>
-        <h2>Did I mention my current favorite song?</h2>
-        <audio controls muted src="images/renzema.mp3" title="All of my worst Ideas by Chris Renzema"></audio>
-        </section>   
-        <section>
-            <h2>Photos I've taken</h2>
-            <figure>
-                <img src="images/photo1.jpg" alt="photo1">
-                <figcaption>
-                    Coba Leaves
-            </figcaption>
-        </figure><figure>
-            <img src="images/photo2.jpg" alt="photo2">
-            <figcaption>
-           My mom's flower
-        </figcaption>
-    </figure><figure>
-        <img src="images/photo3.jpg" alt="photo3">
-        <figcaption>
-         The lonley way home
-    </figcaption>
-</figure>
-<figure>
-    <img src="images/photo4.jpg" alt="photo4">
-    <figcaption>
-      Wooden bird from Gondor
-</figcaption>
-</figure>
-        </section> 
-        </main>
-   
-        <footer>
-            <div >
-                <div >
-                    <img src="images/log.png" alt="logo here">
-                    <div>
-                        <p >
-                            <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:lidiyamkt@gmail.com" class="email1">Email me</a>
-                        </p>
-                        <p>
-                            <i class="fa-brands fa-linkedin"></i> linkedin.com/
-                        </p>
-                        <p>
-                            <i class="fa-brands fa-telegram"></i> t.me/@YW10565
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-phone"></i> +251913460116
-                        </p>
-                        <p> <i class="fa-brands fa-github"></i>github.com/Lidiya-MK</p>
-                       
+            
+            <div class="w-full lg:w-4/6 text-center lg:text-left order-1 lg:order-2">
+               
+                <h2 class="text-center lg:text-left font-bold mb-4">Reading Books</h2>
+                <p class="hobby-box1__para">
+                    Books hold an irreplaceable position in my life; they're steadfast companions offering fresh perspectives. Each book is a journey, a chance to delve into another mind and experience the world through a different lens. The following is a list of my favorite authors of all time.   Books hold an irreplaceable position in my life; they're steadfast companions offering fresh perspectives. Each book is a journey, a chance to delve into another mind and experience the world through a different lens. The following is a list of my favorite authors of all time.</p>
+                    <ul  class="hobby-box1__list">
+                        <li>	&#9830; Ryan Holiday</li>
+                        <li> 	&#9830; Robert Greene</li>
+                        <li> 	&#9830; Khalil Gibran</li>
+                    </ul>
+                <p class="hobby-box1__para">And in the following table you shall find my favorite book in a particular genere of books</p>
+                <table class="hobby-box1__table border-collapse border border-white">
+                    <thead>
+                        <tr>
+                            <th class="border border-white px-4 py-2">Genre</th>
+                            <th class="border border-white px-4 py-2">Book</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-white px-4 py-2">Stoicism</td>
+                            <td class="border border-white px-4 py-2">The Daily Stoic by Ryan Holiday</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-white px-4 py-2">Psychology</td>
+                            <td class="border border-white px-4 py-2">The Molecule of More by Daniel Liberman</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-white px-4 py-2">Fiction</td>
+                            <td class="border border-white px-4 py-2">London Calling by Edward Bloor</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3  class="font-bold"> My Top 3</h3>
+        
+                <div class="flex justify-between">
+                    <!-- Book covers -->
+                    <div class="flex justify-between gap-6">
+                        <!-- Book covers -->
+                        <div class="book-box">
+                            <figure class="book-box__cover">
+                                <img src="images/childhood.jpg" alt="childhood book cover" class="book-box__childhood h-20 lg:h-24">
+                                <figcaption class="book-box__caption">Childhood</figcaption>
+                            </figure>
+                        </div>
+                        <div class="book-box">
+                            <figure class="book-box__cover">
+                                <img src="images/daily.jpg" alt="The cover of the daily stoic" class="book-box__daily-cover h-20 lg:h-24">
+                                <figcaption class="book-box__caption">The Daily Stoic</figcaption>
+                            </figure>
+                        </div>
+                        <div class="book-box">
+                            <figure class="book-box__cover">
+                                <img src="images/meditations.jpg" alt="meditations book cover" class="book-box__meditations h-20 lg:h-24">
+                                <figcaption class="book-box__caption">Meditations</figcaption>
+                            </figure>
+                        </div>
+                    </div>          
+            </div>
+
+           
+            </div>
+            
+        </section>
+
+        <section class="bg-stone-700 flex flex-col lg:flex-row justify-center text-white p-6">
+            <aside class="hobbies__sidebar2 bg-gray-400 p-4 lg:w-3/6 pl-2 rounded-lg ml-5 mb-8 lg:mb-0 mr-0 lg:mr-4 order-2 lg:order-1">
+                <h3 class="hobbies__title2 text-xl font-semibold mb-4 text-white text-center">Travel plans</h3>
+                <div class="grid grid-cols-2 lg:grid-cols-2 gap-2 justify-items-center">
+                    <div class="travel flex flex-col items-center">
+            
+                        <img src="images/turkey.jpg" alt="istanbul" class="rounded-full h-24 w-24 object-cover">
+                        <figcaption class="text-center mt-2">Istanbul</figcaption>
+                    </div>
+                    <div class="travel flex flex-col items-center">
+                        <img src="images/china.jpg" alt="The great wall of china" class="rounded-full h-24 w-24 object-cover">
+                        <figcaption class="text-center mt-2">The great wall</figcaption>
+                    </div>
+                    <div class="travel flex flex-col items-center">
+                        <figure>
+                            <img src="images/japan.jpeg" alt="japan" class="rounded-full h-24 w-24 object-cover">
+                            <figcaption class="text-center mt-2">
+                                Tokyo
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="travel">
+                        <figure>
+                            <img src="images/russia.jpg" alt="russia" class="rounded-full h-24 w-24 object-cover ">
+                            <figcaption class="text-center mt-2">
+                                Moscow
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="travel pl-4">
+                        <figure>
+                            <img src="images/israel.jpg" alt="israel" class="rounded-full h-24 w-24 object-cover ">
+                            <figcaption class="text-center mt-2">
+                                Israel
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="travel">
+                        <figure>
+                            <img src="images/Greece.jpg" alt="greece" class="rounded-full h-24 w-24 object-cover ">
+                            <figcaption class="text-center mt-2">
+                                Greece
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-                <div>
-                    <h3>Site Map</h3>
-                    <ul class="site-map">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about-me.html">About Me</a></li>
-                        <li><a href="hobbies.html">Hobbies</a></li>
-                        <li><a href="interests.html">Interests</a></li>
-                        <li><a href="inspirations.html">Inspirations</a></li>
+            </aside>
+            
+            
+            <div class="w-full lg:w-4/6 text-center lg:text-left order-1 lg:order-2">
+                <h2 class="hobby-box2__title text-3xl font-bold mb-4">Coding</h2>
+                <p class="hobby-box2__para text-white  w-full"  >
+                    I developed an interest for coding this past summer when I followed a tutorial on web development. Coding can be a fun way to spend time and this hobby is special to me because it aids the courses that I am currently taking at AAU. This past summer, I created a quote randomizer. I took the quotes from my favorite authors and put them in a javascript array then wrote the following function to randomize the quotes on a click of a button.
+                </p>
+                <div class="hobby-box2__code  bg-stone-700 p-4 mt-4">
+                    <code>
+                        button.addEventListener('click', function() {
+                            let randomQuoteIndex = Math.floor(Math.random() * quotes.length);
+                            quote.innerText = quotes[randomQuoteIndex].quote;
+                            person.innerText = quotes[randomQuoteIndex].person;
+                            document.body.style.backgroundImage = `url(${quotes[randomQuoteIndex].backgrounds})`;
+                        });
+                    </code>
+            </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-400"> 
+            <h2 class=" text-white text-3xl font-bold  mb-4 text-center pt-6">Video Editing</h2> 
+            <div class="bg-gray-400 text-stone-900 p-4 lg:flex lg:flex-col gap-3">
+                <div class="lg:w-1/2 lg:order-1">
+                    <p class="video-editing__para pt-20 lg:pt-0">I edited this video for a personal project. I was making a dummy website for a wildlife sanctuary I named "Jafar" but I obviously couldn't find a video tailored to my project. So i took it upon myself to edit one for the project.And this was the result.I edited this video for a personal project. I was making a dummy website for a wildlife sanctuary I named "Jafar" but I obviously couldn't find a video tailored to my project. So i took it upon myself to edit one for the project.And this was the result.</p>
+                </div>
+                <div class="lg:w-1/2 lg:order-2">
+                    <video src="images/JAFAR.mp4" controls loop class="video-editing__video w-full lg:w-auto"></video>
+                </div>
+            </div>
+
+            <div class="bg-gray-400 text-stone-900 p-4 lg:flex lg:flex-col gap-3">
+                <div class="lg:w-1/2 lg:order-1">
+                    <video src="images/the-rainy-day.mp4" controls loop class="video-editing__video w-full lg:w-auto"></video>
+                </div>
+                <div class="lg:w-1/2 lg:order-2 pl-10">
+                    <p class="video-editing__para pt-20 lg:pt-0 pl-5">After hearing the melancholic poem "The Rainy Day" by Henry Wadsworth Longfellow being read out loud I couldn't help but make a video for it. The result was a touching and cinematic video.After hearing the melancholic poem "The Rainy Day" by Henry Wadsworth Longfellow being read out loud I couldn't help but make a video for it. The result was a touching and cinematic video.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-black text-white">
+            <h2 class="text-white text-3xl font-bold  mb-4 text-center pt-6">Photos I have taken</h2>
+            <div class="photo-box flex flex-wrap gap-8 mx-4 px-3 justify-center items-center">
+                    <div class="photo-box__box w-1/4 sm:w-1/2 p-2">
+                    <figure class="text-white">
+                        <img src="images/photo1.jpg" alt="photo1" class=" rounded w-40 h-50 object-cover">
+                        <figcaption class="photo-box__caption">
+                            Coba Leaves
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="photo-box__box w-1/4 sm:w-1/2 p-2">
+                    <figure class="text-white">
+                        <img src="images/photo2.jpg" alt="photo2" class=" rounded w-40 h-50 object-cover">
+                        <figcaption class="photo-box__caption">
+                            My mom's flower
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="photo-box__box w-1/4 sm:w-1/2 p-2">
+                    <figure class="text-white">
+                        <img src="images/photo3.jpg" alt="photo3" class=" rounded w-40 h-50 object-cover">
+                        <figcaption class="photo-box__caption">
+                            The lonely way home
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="photo-box__box w-1/4 sm:w-1/2 p-2">
+                    <figure class="text-white">
+                        <img src="images/photo4.jpg" alt="photo4" class=" rounded w-40 h-50 object-cover">
+                        <figcaption class="photo-box__caption">
+                            Wooden bird from Gondor
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+     <footer class="footer bg-stone-800 text-white">
+        <div class="container mx-auto px-4 py-4 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+        
+                <div class="footer__logo-column ">
+                    <img src="images/logo.png" alt="logo here" class="footer__logo mb-4 h-16 w-auto">
+                    <div class="footer__contact-info">
+                        <p class="footer__email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:lidiyamkt@gmail.com" class="footer__email-link">Email me</a>
+                        </p>
+                        <p class="footer__linkedin">
+                            <i class="fa-brands fa-linkedin"></i> linkedin.com/
+                        </p>
+                        <p class="footer__telegram">
+                            <i class="fa-brands fa-telegram"></i> t.me/@YW10565
+                        </p>
+                        <p class="footer__phonenumber">
+                            <i class="fa-solid fa-phone"></i> +251913460116
+                        </p>
+                        <p class="footer__github">
+                            <i class="fa-brands fa-github"></i>github.com/Lidiya-MK
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="footer__sitemap-column lg:block hidden">
+                    <h2 class="footer__sitemap-title text-2xl pb-2">Site Map</h2>
+                    <ul class="footer__site-map">
+                        <li><a href="home.html" class="hover:text-yellow-300 transition-colors duration-300">Home</a></li>
+                        <li><a href="about-me.html" class="hover:text-yellow-300 transition-colors duration-300">About Me</a></li>
+                        <li><a href="hobbies.html" class="hover:text-yellow-300 transition-colors duration-300">Hobbies</a></li>
+                        <li><a href="interests.html" class="hover:text-yellow-300 transition-colors duration-300">Interests</a></li>
+                        <li><a href="inspirations.html" class="hover:text-yellow-300 transition-colors duration-300">Inspirations</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h3>Message Me</h3>
-                    <input type="text" placeholder="Your name">
-                    <input type="email" placeholder="Your email">
-                    <input type="text" placeholder="Your message">
+
+                <div class="footer__message-column col-span-2 lg:col-span-1">
+                    <h2 class="footer__message-title text-2xl pb-2">Message Me</h2>
+                    <input type="text" placeholder="Your name" class="footer__input-1 mb-4 block px-3 py-2">
+                    <input type="email" placeholder="Your email" class="footer__input-1 mb-4 block px-3 py-2">
+                    <input type="text" placeholder="Your message" class="footer__input-2 block px-3 py-2">
                 </div>
             </div>
-            <div>
-                &copy; 2023 LMK.com. All Rights Reserved.
-            </div>
-        </footer>
- 
-</body>
-</html>
+        </div>
+        <div class="text-center mb-0 lg:mt-12 bg-black">
+            &copy; 2023 LMK.com. All Rights Reserved.
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  

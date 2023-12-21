@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr; /* Set to one column at smaller screens */
+  }
+
+  .hidden.md\:block {
+    display: block; /* Override the hidden class to display the second column */
+  }
+
+  .hidden.md\:block + div {
+    display: block; /* Display the third column below the second one */
+    margin-top: 1rem; /* Add some space between the second and third columns */
+  }
+}

@@ -3,122 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <title>Inspirations Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-        <header>
-            <div >
-                <div>
-                    <img src="images/log.png" alt="logo here">
-                </div>
-                <nav class="navbar">
-                    <a href="home.html">Home</a>
-                    <a href="about-me.html">About Me</a>
-                    <a href="hobbies.html">Hobbies</a>
-                    <a href="interests.html">Interests</a>
-                    <a href="inspirations.html">Inspirations</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-         
-            <h1>My inspirations</h1>
-            <section>
-                <img src="images/ryan.jpg" alt="ryan holiday" title="ryan holiday">
-                <h2> Ryan Holiday</h2>
-                <p>
-              Ryan Holiday, beyond his acclaimed books, inspires me for his unconventional lifestyle. Despite his fame as an author, he thrives far from the city with his family, untouched by the pitfalls of success.Ryan in an interview once said about Marcus Aurelius
-              <q cite="https://www.all-about-psychology.com/ryan-holiday.html">
-                He could basically do anything he wanted and had the known world at his fingertips. Instead he chose to try to live a life of virtue and honor, writing personal exhortations to himself at night a reminders of how to live a good life.
-              </q>
-                </p>
-                <a href="https://www.all-about-psychology.com/ryan-holiday.html">More on Ryan</a>
-            </section>
-            <section>
-                <img src="images/rudard.jpg" alt="Rudard Kipling" title="Rudard Kipling">
-                <h2>Rudard Kipling</h2>
-                <p>The peom 'if' by Rudard Kipling in my opinion is the best ever written. This poem alone has inspired me to be a better person and hence I felt it necessary to list its poet as an inspiration. These are a few lines from 'if' </p>
-                <blockquote cite="https://www.poetryfoundation.org/poems/46473/if---">
-                    <p>
-                        If you can make one heap of all your winnings
-                        And risk it on one turn of pitch-and-toss,
-                        And lose, and start again at your beginnings
-                        And never breathe a word about your loss.
-                    </p>
-                </blockquote>
-                <a href="https://en.wikipedia.org/wiki/Rudyard_Kipling">More on Rudard Kipling</a>
-            </section>
+    <header>
+        <div class="bg-stone-800 py-3 px-4 lg:px-6">
+            <nav class="flex items-center justify-between">
+                <img src="images/logo.png" alt="Logo" class="h-16 w-auto">
+        
+                
+                <ul  id="menuList" class="hidden lg:flex space-x-6 text-white text-sm lg:text-base">
+                    <li><a href="home.html" class="hover:text-yellow-300 transition-colors duration-300">HOME</a></li>
+                    <li><a href="about-me.html" class="hover:text-yellow-300 transition-colors duration-300">ABOUT ME</a></li>
+                    <li><a href="hobbies.html" class="hover:text-yellow-300 transition-colors duration-300">HOBBIES</a></li>
+                    <li><a href="interests.html" class="hover:text-yellow-300 transition-colors duration-300">INTERESTS</a></li>
+                    <li><a href="inspirations.html" class="hover:text-yellow-300 transition-colors duration-300">INSPIRATIONS</a></li>
+                </ul>
+        
             
-            <section>
-                <img src="images/seneca.jpg" alt="seneca" title="seneca">
-                <h2>Seneca</h2>
-                <p> Seneca a famous philospher once said "While I may wish to be free from the pangs of suffering and adversity, should the hour demand its presence, I am resolved to confront it with an unwavering spirit. I shall aspire not for its absence but for the strength to endure it with fortitude, to navigate through pain without surrendering my tranquility or causing harm to others." It is precisley because of this and many other sayings I find great value in his teachings.</p>
-                <a href="https://en.wikipedia.org/wiki/Seneca_the_Younger">More on Seneca</a>
-            </section>
-            <section>
-                <img src="images/epictetus.jpg" alt="epictitus" title="Epictitus">
-                <h2>Epictitus</h2>
-                <p> 
-                    Despite having humble beginnings as a slave in anicient Rome, Epictitus became one of the greatest philosphers of all time. What makes him unique is his emphasis on the idea of focusing on what we can control and not letting things outside our control bother us. I belive this lesson is important for people of my generation including myself.</p>
-                <a href="https://en.wikipedia.org/wiki/Epictetus">More on Epictitus</a>
-            </section>
-            <section>
-                <img src="images/andrew.jpg" alt="andrew" title="Andrew Huberman">
-                <h2> Dr.Andrew Huberman</h2>
-                <p> My interest in Neuroscience came from listening to the podcast of Neuroscientist Andrew Huberman. Dr. Huberman has a way of describing complicated concepts of the field in very simple terms so that the public can gain understanding of how the chemicals in their brains affect their day today lives.</p>
-                <a href="https://en.wikipedia.org/wiki/Andrew_D._Huberman"> More on Dr. Huberman</a>
-            </section>
-            <section>
-                <img src="images/max.png" alt="Max" title="Max Ehrmann">
-                <h2> Max Ehrmann</h2>
-                <p> Max Ehrmann like Rudard Kipling became an inspiration to me through his poetry. "Disderata" in the poem Ehrmann says "Exercise caution in your business affairs, for the world is full of trickery. But let this not blind you to what virtue there is; many persons strive for high ideals, and everywhere life is full of heroism."</p>
-                <a href="https://en.wikipedia.org/wiki/Max_Ehrmann"> More on Max Eherman</a>
-            </section>
-        </main>
-  
-        <footer>
-            <div >
-                <div >
-                    <img src="images/log.png" alt="logo here">
-                    <div>
-                        <p >
-                            <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:lidiyamkt@gmail.com" class="email1">Email me</a>
+                <button id="menuToggle" class="block lg:hidden text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+            <ul id="secondaryMenuList" class="hidden lg:hidden space-y-2 text-white text-sm text-center">
+                <li><a href="home.html" class="hover:text-yellow-300 transition-colors duration-300">HOME</a></li>
+                <li><a href="about-me.html" class="hover:text-yellow-300 transition-colors duration-300">ABOUT ME</a></li>
+                <li><a href="hobbies.html" class="hover:text-yellow-300 transition-colors duration-300">HOBBIES</a></li>
+                <li><a href="interests.html" class="hover:text-yellow-300 transition-colors duration-300">INTERESTS</a></li>
+                <li><a href="inspirations.html" class="hover:text-yellow-300 transition-colors duration-300">INSPIRATIONS</a></li>
+            </ul>
+        </div>
+    </header>
+   
+    <main class="bg-gray-400">
+        <h1 class="text-white text-3xl lg:text-5xl font-bold text-center mb-6 pt-6"> My inspirations</h1>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-8 py-8 ml-3 mr-5">
+            <section class="bg-stone-800 text-white p-4 rounded-lg">
+                <img src="images/ryan.jpg" alt="ryan holiday" title="ryan holiday" class="w-full h-48 object-cover  rounded-lg">
+                <h2 class="text-2xl font-bold mb-2 py-3 text-center">Ryan Holiday</h2>
+                <p class="inspiration__para">
+                    Ryan Holiday, beyond his acclaimed books, inspires me for his unconventional lifestyle. Despite his fame as an author, he thrives far from the city with his family, untouched by the pitfalls of success.Ryan in an interview once said about Marcus Aurelius
+                    <blockquote cite="https://www.all-about-psychology.com/ryan-holiday.html" >
+                        <p class="inspiration__quote">
+                            He could basically do anything he wanted and had the known world at his fingertips. Instead, he chose to try to live a life of virtue and honor, writing personal exhortations to himself at night as reminders of how to live a good life.
                         </p>
-                        <p>
+                    </blockquote>
+                </p>
+                <a href="https://www.all-about-psychology.com/ryan-holiday.html" class="text-yellow-300 mt-4 hover:text-yellow-500">More on Ryan</a>
+            </section>
+            <section class="bg-stone-800 text-white p-4 rounded-lg">
+                <img src="images/rudard.jpg" alt="Rudard Kipling" title="Rudard Kipling" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-2xl font-bold mb-2 py-3 text-center">Rudard Kipling</h2>
+                <p class="inspiration__para">The peom 'if' by Rudard Kipling in my opinion is the best ever written. This poem alone has inspired me to be a better person and hence I felt it necessary to list its poet as an inspiration. These are a few lines from 'if' </p>
+                    <blockquote cite="https://www.poetryfoundation.org/poems/46473/if---" >
+                        <p  class="inspiration__quote">
+                            If you can make one heap of all your winnings
+                            And risk it on one turn of pitch-and-toss,
+                            And lose, and start again at your beginnings
+                            And never breathe a word about your loss.
+                        </p>
+                    </blockquote>
+                    <a href="https://en.wikipedia.org/wiki/Rudyard_Kipling" class="text-yellow-300 mt-4 hover:text-yellow-500">More on Rudard Kipling</a>
+            </section>
+
+
+            <section class="bg-stone-800 text-white p-4 rounded-lg">
+                <img src="images/seneca.jpg" alt="seneca" title="seneca" class="w-full h-48 object-cover rounded-lg">
+                    <h2 class="text-2xl font-bold mb-2  py-3 text-center">Seneca</h2>
+                <p class="inspiration__para"> Seneca a famous philospher once said "While I may wish to be free from the pangs of suffering and adversity, should the hour demand its presence, I am resolved to confront it with an unwavering spirit. I shall aspire not for its absence but for the strength to endure it with fortitude, to navigate through pain without surrendering my tranquility or causing harm to others." It is precisley because of this and many other sayings I find great value in his teachings.</p>
+                <a href="https://en.wikipedia.org/wiki/Seneca_the_Younger" class="text-yellow-300 mt-4 hover:text-yellow-500">More on Seneca</a>
+            </section>
+
+
+            <section class="bg-stone-800 text-white p-4 rounded-lg">
+                <img src="images/epictetus.jpg" alt="Epictetus" title="Epictetus" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-2xl font-bold mb-2 py-3 text-center">Epictetus</h2>
+               <p class="inspiration__para"> 
+                        Despite having humble beginnings as a slave in anicient Rome, Epictitus became one of the greatest philosphers of all time. What makes him unique is his emphasis on the idea of focusing on what we can control and not letting things outside our control bother us. I belive this lesson is important for people of my generation including myself.Epictitus became one of the greatest philosphers of all time.</p>
+                    <a href="https://en.wikipedia.org/wiki/Epictetus" class="text-yellow-300 mt-4 hover:text-yellow-500">More on Epictitus</a>
+            </section>
+            <section class="bg-stone-800 text-white p-4 rounded-lg">
+                <img src="images/andrew.jpg" alt="Andrew Huberman" title="Andrew Huberman" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-2xl font-bold mb-2 py-3 text-center">Andrew Huberman</h2>
+                <p class="inspiration__para"> My interest in Neuroscience came from listening to the podcast of Neuroscientist Andrew Huberman. Dr. Huberman has a way of describing complicated concepts of the field in very simple terms so that the public can gain understanding of how the chemicals in their brains affect their day today lives.My interest in Neuroscience came from listening to the podcast of Neuroscientist Andrew Huberman. Dr. Huberman has a way of describing complicated concepts of the field in.</p>
+                    <a href="https://en.wikipedia.org/wiki/Andrew_D._Huberman" class="text-yellow-300 mt-4 hover:text-yellow-500"> More on Dr. Huberman</a>
+            </section>
+            <section class="bg-stone-800 text-white p-4 rounded-lg">
+                <img src="images/max.png" alt="Max Ehrmann" title="Max Ehrmann" class="w-full h-48 object-cover rounded-lg">
+                <h2 class="text-2xl font-bold mb-2 py-3 text-center">Max Ehrmann</h2>
+                <p class="inspiration__para"> Max Ehrmann like Rudard Kipling became an inspiration to me through his poetry. Max Ehrmann like Rudard Kipling became an inspiration to me through his poetry. "Disderata" in the poem Ehrmann says <p class="inspiration__quote">"Exercise caution in your business affairs, for the world is full of trickery. But let this not blind you to what virtue there is; many persons strive for high ideals, and everywhere life is full of heroism."</p>
+                <a href="https://en.wikipedia.org/wiki/Max_Ehrmann" class="text-yellow-300 mt-4 hover:text-yellow-500"> More on Max Eherman</a>
+            </section>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+  
+    <footer class="footer bg-stone-800 text-white">
+        <div class="container mx-auto px-4 py-4 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+        
+                <div class="footer__logo-column ">
+                    <img src="images/logo.png" alt="logo here" class="footer__logo mb-4 h-16 w-auto">
+                    <div class="footer__contact-info">
+                        <p class="footer__email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:lidiyamkt@gmail.com" class="footer__email-link">Email me</a>
+                        </p>
+                        <p class="footer__linkedin">
                             <i class="fa-brands fa-linkedin"></i> linkedin.com/
                         </p>
-                        <p>
+                        <p class="footer__telegram">
                             <i class="fa-brands fa-telegram"></i> t.me/@YW10565
                         </p>
-                        <p>
+                        <p class="footer__phonenumber">
                             <i class="fa-solid fa-phone"></i> +251913460116
                         </p>
-                        <p> <i class="fa-brands fa-github"></i>github.com/Lidiya-MK</p>
-                       
+                        <p class="footer__github">
+                            <i class="fa-brands fa-github"></i>github.com/Lidiya-MK
+                        </p>
                     </div>
                 </div>
-                <div>
-                    <h3>Site Map</h3>
-                    <ul class="site-map">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about-me.html">About Me</a></li>
-                        <li><a href="hobbies.html">Hobbies</a></li>
-                        <li><a href="interests.html">Interests</a></li>
-                        <li><a href="inspirations.html">Inspirations</a></li>
+    
+                <div class="footer__sitemap-column lg:block hidden">
+                    <h2 class="footer__sitemap-title text-2xl pb-2">Site Map</h2>
+                    <ul class="footer__site-map">
+                        <li><a href="home.html" class=" hover:text-yellow-300 transition-colors duration-300">Home</a></li>
+                        <li><a href="about-me.html" class="hover:text-yellow-300 transition-colors duration-300">About Me</a></li>
+                        <li><a href="hobbies.html" class="hover:text-yellow-300 transition-colors duration-300">Hobbies</a></li>
+                        <li><a href="interests.html" class="hover:text-yellow-300 transition-colors duration-300">Interests</a></li>
+                        <li><a href="inspirations.html" class="hover:text-yellow-300 transition-colors duration-300">Inspirations</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h3>Message Me</h3>
-                    <input type="text" placeholder="Your name">
-                    <input type="email" placeholder="Your email">
-                    <input type="text" placeholder="Your message">
+
+                <div class="footer__message-column col-span-2 lg:col-span-1">
+                    <h2 class="footer__message-title text-2xl pb-2">Message Me</h2>
+                    <input type="text" placeholder="Your name" class="footer__input-1 mb-4 block px-3 py-2">
+                    <input type="email" placeholder="Your email" class="footer__input-1 mb-4 block px-3 py-2">
+                    <input type="text" placeholder="Your message" class="footer__input-2 block px-3 py-2">
                 </div>
             </div>
-            <div>
-                &copy; 2023 LMK.com. All Rights Reserved.
+        </div>
+        <div class="text-center mb-0 lg:mt-12 bg-black">
+            &copy; 2023 LMK.com. All Rights Reserved.
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+        </body>
+        </html>
+
+
+
+        <!-- <main class="main-section">
+            <h1 class="main-section__title"> My inspirations</h1>
+            <div class="main-section__box">
+                <section class="main-section__inspiration">
+                    <img src="images/ryan.jpg" alt="ryan holiday" title="ryan holiday" class="inspiration__image">
+                    <h2 class="inspiration__name"> Ryan Holiday</h2>
+                    <p class="inspiration__para">
+                        Ryan Holiday, beyond his acclaimed books, inspires me for his unconventional lifestyle. Despite his fame as an author, he thrives far from the city with his family, untouched by the pitfalls of success.Ryan in an interview once said about Marcus Aurelius
+                        <blockquote cite="https://www.all-about-psychology.com/ryan-holiday.html" >
+                            <p class="inspiration__quote">
+                                He could basically do anything he wanted and had the known world at his fingertips. Instead, he chose to try to live a life of virtue and honor, writing personal exhortations to himself at night as reminders of how to live a good life.
+                            </p>
+                        </blockquote>
+                    </p>
+                    <a href="https://www.all-about-psychology.com/ryan-holiday.html" class="inspiration__more-link">More on Ryan</a>
+                </section>
+                
+                <section  class="main-section__inspiration">
+                    <img src="images/rudard.jpg" alt="Rudard Kipling" title="Rudard Kipling" class="inspiration__image">
+                    <h2 class="inspiration__name">Rudard Kipling</h2>
+                    <p class="inspiration__para">The peom 'if' by Rudard Kipling in my opinion is the best ever written. This poem alone has inspired me to be a better person and hence I felt it necessary to list its poet as an inspiration. These are a few lines from 'if' </p>
+                    <blockquote cite="https://www.poetryfoundation.org/poems/46473/if---" >
+                        <p  class="inspiration__quote">
+                            If you can make one heap of all your winnings
+                            And risk it on one turn of pitch-and-toss,
+                            And lose, and start again at your beginnings
+                            And never breathe a word about your loss.
+                        </p>
+                    </blockquote>
+                    <a href="https://en.wikipedia.org/wiki/Rudyard_Kipling" class="inspiration__more-link">More on Rudard Kipling</a>
+                </section>
+                
+                <section  class="main-section__inspiration">
+                    <img src="images/seneca.jpg" alt="seneca" title="seneca" class="inspiration__image">
+                    <h2 class="inspiration__name">Seneca</h2>
+                    <p class="inspiration__para"> Seneca a famous philospher once said "While I may wish to be free from the pangs of suffering and adversity, should the hour demand its presence, I am resolved to confront it with an unwavering spirit. I shall aspire not for its absence but for the strength to endure it with fortitude, to navigate through pain without surrendering my tranquility or causing harm to others." It is precisley because of this and many other sayings I find great value in his teachings.</p>
+                    <a href="https://en.wikipedia.org/wiki/Seneca_the_Younger" class="inspiration__more-link">More on Seneca</a>
+                </section>
+    
+                <section  class="main-section__inspiration">
+                    <img src="images/epictetus.jpg" alt="epictitus" title="Epictitus" class="inspiration__image">
+                    <h2 class="inspiration__name">Epictitus</h2>
+                    <p class="inspiration__para"> 
+                        Despite having humble beginnings as a slave in anicient Rome, Epictitus became one of the greatest philosphers of all time. What makes him unique is his emphasis on the idea of focusing on what we can control and not letting things outside our control bother us. I belive this lesson is important for people of my generation including myself.Epictitus became one of the greatest philosphers of all time.</p>
+                    <a href="https://en.wikipedia.org/wiki/Epictetus" class="inspiration__more-link">More on Epictitus</a>
+                </section>
+    
+                <section  class="main-section__inspiration">
+                    <img src="images/andrew.jpg" alt="andrew" title="Andrew Huberman" class="inspiration__image">
+                    <h2 class="inspiration__name"> Dr.Andrew Huberman</h2>
+                    <p class="inspiration__para"> My interest in Neuroscience came from listening to the podcast of Neuroscientist Andrew Huberman. Dr. Huberman has a way of describing complicated concepts of the field in very simple terms so that the public can gain understanding of how the chemicals in their brains affect their day today lives.My interest in Neuroscience came from listening to the podcast of Neuroscientist Andrew Huberman. Dr. Huberman has a way of describing complicated concepts of the field in.</p>
+                    <a href="https://en.wikipedia.org/wiki/Andrew_D._Huberman" class="inspiration__more-link"> More on Dr. Huberman</a>
+                </section>
+    
+                <section  class="main-section__inspiration"> 
+                    <img src="images/max.png" alt="Max" title="Max Ehrmann" class="inspiration__image">
+                    <h2 class="inspiration__name"> Max Ehrmann</h2>
+                    <p class="inspiration__para"> Max Ehrmann like Rudard Kipling became an inspiration to me through his poetry. Max Ehrmann like Rudard Kipling became an inspiration to me through his poetry. "Disderata" in the poem Ehrmann says <p class="inspiration__quote">"Exercise caution in your business affairs, for the world is full of trickery. But let this not blind you to what virtue there is; many persons strive for high ideals, and everywhere life is full of heroism."</p>
+                    <a href="https://en.wikipedia.org/wiki/Max_Ehrmann" class="inspiration__more-link"> More on Max Eherman</a>
+                </section>
             </div>
-        </footer>
- 
-</body>
-</html>
+        </main>
+         -->
