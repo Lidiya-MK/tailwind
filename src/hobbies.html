@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Hobbies Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="dist/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -198,58 +198,57 @@
 
         <section class="bg-gray-400"> 
             <h2 class=" text-white text-3xl font-bold  mb-4 text-center pt-6">Video Editing</h2> 
-            <div class="bg-gray-400 text-stone-900 p-4 lg:flex lg:flex-col gap-3">
+            <div class="bg-gray-400 text-stone-900 p-4 lg:flex lg:flex-col-2 gap-3">
                 <div class="lg:w-1/2 lg:order-1">
-                    <p class="video-editing__para pt-20 lg:pt-0">I edited this video for a personal project. I was making a dummy website for a wildlife sanctuary I named "Jafar" but I obviously couldn't find a video tailored to my project. So i took it upon myself to edit one for the project.And this was the result.I edited this video for a personal project. I was making a dummy website for a wildlife sanctuary I named "Jafar" but I obviously couldn't find a video tailored to my project. So i took it upon myself to edit one for the project.And this was the result.</p>
+                    <p class="video-editing__para pt-20 lg:pt-0">I edited this video for a personal project. I was making a dummy website for a wildlife sanctuary I named "Jafar" but I obviously couldn't find a video tailored to my project. So, I took it upon myself to edit one for the project. And this was the result.</p>
                 </div>
                 <div class="lg:w-1/2 lg:order-2">
                     <video src="images/JAFAR.mp4" controls loop class="video-editing__video w-full lg:w-auto"></video>
                 </div>
             </div>
-
-            <div class="bg-gray-400 text-stone-900 p-4 lg:flex lg:flex-col gap-3">
+            
+            
+            <div class="bg-gray-400 text-stone-900 p-4 lg:flex lg:flex-col-2 gap-2">
                 <div class="lg:w-1/2 lg:order-1">
                     <video src="images/the-rainy-day.mp4" controls loop class="video-editing__video w-full lg:w-auto"></video>
                 </div>
                 <div class="lg:w-1/2 lg:order-2 pl-10">
-                    <p class="video-editing__para pt-20 lg:pt-0 pl-5">After hearing the melancholic poem "The Rainy Day" by Henry Wadsworth Longfellow being read out loud I couldn't help but make a video for it. The result was a touching and cinematic video.After hearing the melancholic poem "The Rainy Day" by Henry Wadsworth Longfellow being read out loud I couldn't help but make a video for it. The result was a touching and cinematic video.</p>
+                    <p class="video-editing__para pt-20 lg:pt-0 pl-5">After hearing the melancholic poem "The Rainy Day" by Henry Wadsworth Longfellow being read out loud, I couldn't help but make a video for it. The result was a touching and cinematic video.</p>
                 </div>
             </div>
+            
+            <div class="flex items-center">
+                <h2 class="text-white text-2xl font-bold mb-4 inline-block pt-6">Did I mention my current Favorite song</h2>
+                <audio src="images/renzema.mp3" controls class="ml-4"></audio>
+            </div>
+            
         </section>
 
         <section class="bg-black text-white">
             <h2 class="text-white text-3xl font-bold  mb-4 text-center pt-6">Photos I have taken</h2>
-            <div class="photo-box flex flex-wrap gap-8 mx-4 px-3 justify-center items-center">
-                    <div class="photo-box__box w-1/4 sm:w-1/2 p-2">
+            <div class="photo-box flex gap-8 mx-4 px-3 justify-center items-center">
+                <div class="photo-box__box w-full sm:w-1/4 p-2">
                     <figure class="text-white">
-                        <img src="images/photo1.jpg" alt="photo1" class=" rounded w-40 h-50 object-cover">
-                        <figcaption class="photo-box__caption">
-                            Coba Leaves
-                        </figcaption>
+                        <img src="images/photo1.jpg" alt="photo1" class="rounded w-full h-40 object-cover">
+                        <figcaption class="photo-box__caption">Coba Leaves</figcaption>
                     </figure>
                 </div>
-                <div class="photo-box__box w-1/4 sm:w-1/2 p-2">
+                <div class="photo-box__box w-full sm:w-1/4 p-2">
                     <figure class="text-white">
-                        <img src="images/photo2.jpg" alt="photo2" class=" rounded w-40 h-50 object-cover">
-                        <figcaption class="photo-box__caption">
-                            My mom's flower
-                        </figcaption>
+                        <img src="images/photo2.jpg" alt="photo2" class="rounded w-full h-40 object-cover">
+                        <figcaption class="photo-box__caption">My mom's flower</figcaption>
                     </figure>
                 </div>
-                <div class="photo-box__box w-1/4 sm:w-1/2 p-2">
+                <div class="photo-box__box w-full sm:w-1/4 p-2">
                     <figure class="text-white">
-                        <img src="images/photo3.jpg" alt="photo3" class=" rounded w-40 h-50 object-cover">
-                        <figcaption class="photo-box__caption">
-                            The lonely way home
-                        </figcaption>
+                        <img src="images/photo3.jpg" alt="photo3" class="rounded w-full h-40 object-cover">
+                        <figcaption class="photo-box__caption">The lonely way home</figcaption>
                     </figure>
                 </div>
-                <div class="photo-box__box w-1/4 sm:w-1/2 p-2">
+                <div class="photo-box__box w-full sm:w-1/4 p-2">
                     <figure class="text-white">
-                        <img src="images/photo4.jpg" alt="photo4" class=" rounded w-40 h-50 object-cover">
-                        <figcaption class="photo-box__caption">
-                            Wooden bird from Gondor
-                        </figcaption>
+                        <img src="images/photo4.jpg" alt="photo4" class="rounded w-full h-40 object-cover">
+                        <figcaption class="photo-box__caption">Wooden bird from Gondor</figcaption>
                     </figure>
                 </div>
             </div>
